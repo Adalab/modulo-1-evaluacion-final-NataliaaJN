@@ -1,5 +1,10 @@
-// fonts
-$font-main: "Roboto", sans-serif;
+// font
+$MainFont: "Roboto", sans-serif;
+$titleFontSize: 42px;
+$titleLineHeight: 55px;
+$h2titleFontSize: 16px;
+$fontSize: 18px;
+$lineHeight: 30px;
 
 // colors
 $bright-orange: #f26002;
@@ -7,8 +12,13 @@ $white: #ffffff;
 $light-blue: #8ccbea;
 $blue: #0271bc;
 $dark-grey-blue: #304268;
+$black: #000000;
 
 // sections' colors
 $colorSection2: $light-blue;
 $colorFooter: $dark-grey-blue;
+$colorLinks: $white;
+$colorMenuIcon: $blue;
+$colorTitle: $white;
+$colorFont: $black;
 $colorLinks: $white;

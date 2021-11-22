@@ -3,3 +3,13 @@
 @import "layout/header";
 @import "layout/footer";
 @import "pages/index";
+
+body {
+  font-family: $MainFont;
+  font-size: $fontSize;
+  color: $black;
+}
+
+.page-wrapper {
+  margin: 0 15px;
+}
