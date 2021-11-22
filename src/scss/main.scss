@@ -6,10 +6,19 @@
 
 body {
   font-family: $MainFont;
-  font-size: $fontSize;
+  font-size: $MobilFontSize;
   color: $black;
+  @media(min-width: $tablet){
+      font-size: $TabletFontSize;
+  }
 }
 
 .page-wrapper {
   margin: 0 15px;
+  @media (min-width: $tablet) {
+    margin: 0 39px;
+  }
+  @media (min-width: $desktop) {
+    margin: 0 275px;
+  }
 }

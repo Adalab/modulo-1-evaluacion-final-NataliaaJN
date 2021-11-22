@@ -1,10 +1,19 @@
+.header-wrapper {
+  margin: 0 15px;
+  @media (min-width: $tablet) {
+    margin: 0 39px;
+  }
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
 .header {
   width: 100%;
   height: 100vh;
   position: relative;
   z-index: 10;
   background-image: url(../images/cover.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -19,12 +28,14 @@
     justify-content: center;
     align-items: center;
     &--link {
+      padding: 15px 14px;
       display: flex;
       // justify-content: center;
       // align-items: center;
 
       .ico-menu {
-        padding: 15px 14px;
+        width: 16px;
+        height: 14px;
       }
     }
   }
@@ -45,15 +56,33 @@
       text-align: center;
       word-spacing: 100vw;
       text-transform: uppercase;
-      font-size: $titleFontSize;
-      line-height: $titleLineHeight;
+      font-family: $TitleFont;
+      font-weight: bold;
+      font-size: $MobilTitleSize;
+      line-height: $MobilTitleLineHeight;
       margin-bottom: 10px;
+      @media (min-width: $tablet) {
+        margin: 0 39px;
+        font-size: $TabletTitleSize;
+        line-height: $TabletTitleLineHeight;
+      }
+      @media (min-width: $desktop) {
+        margin: 0 275px;
+        font-size: $DesktopTitleSize;
+        line-height: $DesktopTitleLineHeight;
+      }
     }
 
     &--h2 {
       text-align: center;
-      font-size: $h2titleFontSize;
+      font-size: $MobilH2Size;
       margin-bottom: 30px;
+      @media (min-width: $tablet) {
+        font-size: $H2Size;
+        margin-bottom: 15px;
+      }
+      @media (min-width: $desktop) {
+      }
     }
 
     &--btn {
@@ -61,13 +90,22 @@
       border-radius: 22.5px;
       width: 45px;
       height: 45px;
-      padding: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
       object-fit: contain;
+      @media (min-width: $tablet) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: $desktop) {
+        margin-bottom: 15px;
+      }
       a {
         display: flex;
+        padding: 15px;
+        @media (min-width: $desktop) {
+          padding-bottom: 13px;
+        }
       }
     }
   }

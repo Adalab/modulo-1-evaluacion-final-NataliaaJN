@@ -1,10 +1,26 @@
-// font
+// FONT
 $MainFont: "Roboto", sans-serif;
-$titleFontSize: 42px;
-$titleLineHeight: 55px;
-$h2titleFontSize: 16px;
-$fontSize: 18px;
+$TitleFont: "RobotoSlab";
+$LinksSize: 16px;
 $lineHeight: 30px;
+
+// Mobil:
+$MobilTitleSize: 42px;
+$MobilTitleLineHeight: 55px;
+$MobilH2Size: 16px;
+$MobilFontSize: 18px;
+$lineHeight: 30px;
+
+// Tablet:
+$TabletTitleSize: 80px;
+$TabletTitleLineHeight: 106px;
+$H2Size: 24px;
+$TabletFontSize: 20px;
+
+// Desktop:
+$DesktopTitleSize: 100px;
+$DesktopTitleLineHeight: 132px;
+$DesktopFontSize: 20px;
 
 // colors
 $bright-orange: #f26002;
@@ -22,3 +38,7 @@ $colorMenuIcon: $blue;
 $colorTitle: $white;
 $colorFont: $black;
 $colorLinks: $white;
+
+//sizes
+$tablet: 768px;
+$desktop: 1200px;
