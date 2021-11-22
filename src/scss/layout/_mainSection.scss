@@ -1,0 +1,129 @@
+.section1 {
+  padding: 30px 0;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+
+  &__article {
+    &--insomnia {
+      font-size: 14px;
+      line-height: $lineHeight;
+      color: $light-blue;
+      margin-bottom: 1px;
+      @media (min-width: $tablet) {
+        width: 216px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $desktop) {
+        width: 360px;
+      }
+    }
+
+    &--title {
+      font-size: $MobilSectionSize;
+      @media (min-width: $tablet) {
+        font-size: $TabletSectionSize;
+      }
+      @media (min-width: $tablet) {
+        font-size: $DesktopSectionSize;
+      }
+    }
+
+    &--paragraph {
+      // width: 290px;
+      // height: 120px;
+      margin: 15px 0 30px 0;
+      color: #4a4a4a;
+      @media (min-width: $tablet) {
+        // width: 690px;
+        // height: 60px;
+        margin-top: 30px;
+      }
+      @media (min-width: $tablet) {
+        // width: 730px;
+      }
+    }
+
+    &--btn {
+      width: 76px;
+      height: 45px;
+      background-color: $white;
+      border: solid 2px $bright-orange;
+      border-radius: 22.5px;
+      padding: 0 25px 0 26px;
+      font-size: 20px;
+      // transition: transform 0.5 ease,  color 1s ease-out,
+      //   background-color 4s ease-in, font-weight 0.5 ease;
+      transition: all 2.5s ease;
+      &:hover {
+        transform: scale(1.1);
+        color: white;
+        background-color: $bright-orange;
+        font-weight: bold;
+      }
+      @media (min-width: $tablet) {
+        width: 91px;
+      }
+      @media (min-width: $desktop) {
+        width: 160px;
+      }
+    }
+  }
+}
+
+.section2 {
+  width: 100%;
+  padding: 30px 15px;
+  background-color: $colorSection2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 30px;
+
+  @media (min-width: $tablet) {
+    padding: 30px 39px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 27.7px;
+  }
+  @media (min-width: $desktop) {
+    padding: 60px 275px;
+    column-gap: 26.2px;
+  }
+
+  &__title {
+    grid-column: span 1;
+    @media (min-width: $tablet) {
+      grid-column: span 3;
+    }
+  }
+  &__reasons--reason1 {
+    grid-row: span 1;
+    text-align: center;
+  }
+  &__reasons--reason2 {
+    text-align: center;
+    grid-row: span 1;
+  }
+  &__reasons--reason3 {
+    text-align: center;
+    grid-row: span 1;
+  }
+  &__btn {
+    grid-row: span 1;
+    width: 184px;
+    height: 45px;
+    padding: 0 27.5px 0 28.5px;
+    background-color: $bright-orange;
+    color: $white;
+    border: solid 2px $bright-orange;
+    border-radius: 22.5px;
+    font-size: 20px;
+    line-height: 45px;
+    @media (min-width: $tablet) {
+      grid-column: span 3;
+    }
+  }
+}

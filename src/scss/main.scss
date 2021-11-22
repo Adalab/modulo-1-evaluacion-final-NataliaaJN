@@ -2,14 +2,14 @@
 @import "core/reset";
 @import "layout/header";
 @import "layout/footer";
-@import "pages/index";
+@import "layout/mainSection";
 
 body {
   font-family: $MainFont;
   font-size: $MobilFontSize;
   color: $black;
-  @media(min-width: $tablet){
-      font-size: $TabletFontSize;
+  @media (min-width: $tablet) {
+    font-size: $TabletFontSize;
   }
 }
 
