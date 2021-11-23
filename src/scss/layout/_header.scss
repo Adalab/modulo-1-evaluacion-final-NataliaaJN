@@ -80,9 +80,9 @@
       margin-bottom: 45px;
     }
     @media (min-width: $desktop) {
-      // margin-bottom: 15px;
+      margin-bottom: 13px;
     }
-    a {
+    &--link {
       display: flex;
       padding: 15px;
       @media (min-width: $desktop) {

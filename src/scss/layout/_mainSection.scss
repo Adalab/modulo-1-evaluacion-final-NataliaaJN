@@ -47,14 +47,17 @@
     &--btn {
       width: 76px;
       height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: $white;
       border: solid 2px $bright-orange;
       border-radius: 22.5px;
       padding: 0 25px 0 26px;
       font-size: 20px;
-      transition: transform 0.5s ease, color 1s ease-out, background-color 2s ease-in, font-weight 0.5s ease;
-      // color 1s ease-out, background-color 4s ease-in, font-weight 0.5 ease;
-      // transition: all 2.5s ease;
+      transition: transform 0.5s ease, color 1s ease-out,
+        background-color 2s ease-in, font-weight 0.5s ease;
+
       &:hover {
         transform: scale(1.1);
         color: white;
@@ -73,7 +76,7 @@
 
 .section2 {
   width: 100%;
-  padding: 30px 15px;
+  padding: 30px 15px 60px 15px;
   background-color: $colorSection2;
   display: grid;
   justify-items: center;
@@ -95,6 +98,8 @@
 
   &__title {
     grid-column: span 1;
+    font-size: $MobilSectionSize;
+    font-weight: bold;
     @media (min-width: $tablet) {
       grid-column: span 3;
     }
