@@ -1,12 +1,3 @@
-.header-wrapper {
-  margin: 0 15px;
-  @media (min-width: $tablet) {
-    margin: 0 39px;
-  }
-  @media (min-width: $desktop) {
-    margin: 0;
-  }
-}
 .header {
   width: 100%;
   height: 100vh;
@@ -16,6 +7,11 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: $white;
 
   &__menu {
     width: 44px;
@@ -41,81 +37,57 @@
   }
 
   &__title {
-    position: absolute;
-    top: 284px;
-    // top: 50%;
-    // top: 250px;
-    z-index: 20;
+    text-align: center;
+    word-spacing: 100vw;
+    text-transform: uppercase;
+    font-family: $TitleFont;
+    font-weight: bold;
+    font-size: $MobilTitleSize;
+    line-height: $MobilTitleLineHeight;
+    margin-bottom: 10px;
+    @media (min-width: $tablet) {
+      margin: 0 39px;
+      font-size: $TabletTitleSize;
+      line-height: $TabletTitleLineHeight;
+    }
+    @media (min-width: $desktop) {
+      margin: 0 275px;
+      font-size: $DesktopTitleSize;
+      line-height: $DesktopTitleLineHeight;
+    }
+  }
+
+  &__h2 {
+    text-align: center;
+    font-size: $MobilH2Size;
+    margin-bottom: 30px;
+    @media (min-width: $tablet) {
+      font-size: $H2Size;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btn {
+    background-color: $white;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $colorTitle;
-    // font-size: $titleFontSize;
+    margin-bottom: 53px;
     @media (min-width: $tablet) {
-      top: 30%;
+      margin-bottom: 45px;
     }
-
-    &--h1 {
-      text-align: center;
-      word-spacing: 100vw;
-      text-transform: uppercase;
-      font-family: $TitleFont;
-      font-weight: bold;
-      font-size: $MobilTitleSize;
-      line-height: $MobilTitleLineHeight;
-      margin-bottom: 10px;
-      @media (min-width: $tablet) {
-        margin: 0 39px;
-        font-size: $TabletTitleSize;
-        line-height: $TabletTitleLineHeight;
-      }
-      @media (min-width: $desktop) {
-        margin: 0 275px;
-        font-size: $DesktopTitleSize;
-        line-height: $DesktopTitleLineHeight;
-      }
+    @media (min-width: $desktop) {
+      // margin-bottom: 15px;
     }
-
-    &--h2 {
-      text-align: center;
-      font-size: $MobilH2Size;
-      margin-bottom: 30px;
-      @media (min-width: $tablet) {
-        font-size: $H2Size;
-        margin-bottom: 15px;
-      }
-      @media (min-width: $desktop) {
-      }
-    }
-
-    &--btn {
-      background-color: $white;
-      border-radius: 22.5px;
-      width: 45px;
-      height: 45px;
+    a {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit: contain;
-      @media (min-width: $tablet) {
-        margin-bottom: 30px;
-      }
+      padding: 15px;
       @media (min-width: $desktop) {
-        margin-bottom: 15px;
-      }
-      a {
-        display: flex;
-        padding: 15px;
-        @media (min-width: $desktop) {
-          padding-bottom: 13px;
-        }
+        padding-bottom: 13px;
       }
     }
   }
-}
-.img-arrow {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }

@@ -52,9 +52,9 @@
       border-radius: 22.5px;
       padding: 0 25px 0 26px;
       font-size: 20px;
-      // transition: transform 0.5 ease,  color 1s ease-out,
-      //   background-color 4s ease-in, font-weight 0.5 ease;
-      transition: all 2.5s ease;
+      transition: transform 0.5s ease, color 1s ease-out, background-color 2s ease-in, font-weight 0.5s ease;
+      // color 1s ease-out, background-color 4s ease-in, font-weight 0.5 ease;
+      // transition: all 2.5s ease;
       &:hover {
         transform: scale(1.1);
         color: white;
