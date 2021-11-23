@@ -25,6 +25,12 @@
     justify-content: space-between;
   }
 
+  @keyframes bounce{
+      0%{
+          transform: translateY(-50%);
+      }
+  }
+
   &__btn {
     width: 45px;
     height: 45px;
