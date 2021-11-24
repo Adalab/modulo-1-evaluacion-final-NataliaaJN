@@ -15,13 +15,3 @@ body {
     font-size: $TabletFontSize;
   }
 }
-
-.page-wrapper {
-  margin: 0 15px;
-  @media (min-width: $tablet) {
-    margin: 0 39px;
-  }
-  @media (min-width: $desktop) {
-    margin: 0 275px;
-  }
-}

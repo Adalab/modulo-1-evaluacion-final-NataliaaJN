@@ -1,7 +1,14 @@
+// Links' style of the footer section
 .footer-links {
-    color: $colorLinks;
-    text-decoration: none;
-    font-size: $LinksSize;
-    text-transform: uppercase;
-    line-height: $lineHeight;
-  }
+  color: $colorLinks;
+  text-decoration: none;
+  font-size: $LinksSize;
+  text-transform: uppercase;
+  line-height: $lineHeight;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+}

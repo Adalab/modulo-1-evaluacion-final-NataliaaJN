@@ -4,6 +4,11 @@
   width: 100%;
   padding: 30px 15px 60px 15px;
   background-color: $colorSection2;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -19,30 +24,65 @@
     column-gap: 27.7px;
   }
   @media (min-width: $desktop) {
-    padding: 60px 275px;
+    padding: 10px 85px 30px 81px;
     column-gap: 26.2px;
   }
 
+  //  Section's title
   &__title {
     grid-column: span 1;
     font-size: $MobilSectionSize;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    text-align: center;
     @media (min-width: $tablet) {
       grid-column: span 3;
     }
   }
+
+  //  Section's articles
   &__reasons--reason1 {
     grid-row: span 1;
-    text-align: center;
+    .reason1-title {
+      line-height: 1.67;
+    }
+    .reason1-paragraph {
+      line-height: 1.67;
+      @media (min-width: $tablet) {
+        padding-top: 14px;
+      }
+    }
   }
   &__reasons--reason2 {
     text-align: center;
     grid-row: span 1;
+    .reason2-title {
+      line-height: 1.67;
+    }
+    .reason2-paragraph {
+      line-height: 1.67;
+      @media (min-width: $tablet) {
+        padding-top: 14px;
+      }
+    }
   }
   &__reasons--reason3 {
-    text-align: center;
     grid-row: span 1;
+    .reason3-title {
+      line-height: 1.67;
+    }
+    .reason3-paragraph {
+      line-height: 1.67;
+      @media (min-width: $tablet) {
+        padding-top: 14px;
+      }
+    }
   }
+
+  //  Section's button
   &__btn {
     margin-top: 15px;
     grid-row: span 1;
@@ -58,11 +98,13 @@
     border: solid 2px $bright-orange;
     border-radius: 22.5px;
     font-size: 20px;
+    font-weight: 500;
     line-height: 45px;
     transition: transform 0.5s ease, color 1s ease-out,
       background-color 2s ease-in, font-weight 0.5s ease;
 
     @media (min-width: $tablet) {
+      margin-top: 20px;
       grid-column: span 3;
       width: 210px;
     }

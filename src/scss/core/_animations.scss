@@ -12,6 +12,19 @@
   }
 }
 
+@keyframes bounceTablet {
+  0% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 // Footer animation
 @keyframes flux {
   0% {

@@ -49,6 +49,11 @@
     font-weight: bold;
     font-size: $MobilTitleSize;
     line-height: $MobilTitleLineHeight;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
     margin-bottom: 10px;
     @media (min-width: $tablet) {
       margin: 0 39px;
@@ -65,6 +70,11 @@
   &__h2 {
     text-align: center;
     font-size: $MobilH2Size;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
     margin-bottom: 30px;
     @media (min-width: $tablet) {
       font-size: $H2Size;
@@ -87,6 +97,9 @@
 
     @media (min-width: $tablet) {
       margin-bottom: 45px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+      transform: translateY(0%);
+      animation: bounceTablet 3s ease-in-out infinite;
     }
     @media (min-width: $desktop) {
       margin-bottom: 13px;
