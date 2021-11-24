@@ -57,7 +57,7 @@
 
       &:hover {
         transform: scale(1.1);
-        color: white;
+        color: $white;
         background-color: $bright-orange;
         font-weight: bold;
       }
@@ -130,6 +130,8 @@
     border-radius: 22.5px;
     font-size: 20px;
     line-height: 45px;
+    transition: transform 0.5s ease, color 1s ease-out,
+        background-color 2s ease-in, font-weight 0.5s ease;
 
     @media (min-width: $tablet) {
       grid-column: span 3;
@@ -138,6 +140,12 @@
 
     @media (min-width: $desktop) {
       width: 255px;
+    }
+    &:hover {
+      transform: scale(1.1);
+      color: $bright-orange;
+      background-color: $white;
+      font-weight: bold;
     }
   }
   .reason_flex {

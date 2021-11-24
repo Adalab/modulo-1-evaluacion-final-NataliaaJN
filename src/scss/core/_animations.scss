@@ -1,0 +1,48 @@
+// Header animation
+@keyframes bounce {
+  0% {
+    transform: translateY(-50%);
+  }
+  40% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+// Footer animation
+@keyframes flux {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10%) rotate(360deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+// Footer: heart animation
+@keyframes shake {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(0.8em) rotate(15deg);
+  }
+  10%,
+  30%,
+  50% {
+    transform: translate(-0.5em) rotate(-15deg);
+  }
+  70%,
+  100% {
+    transform: translate(0);
+  }
+}

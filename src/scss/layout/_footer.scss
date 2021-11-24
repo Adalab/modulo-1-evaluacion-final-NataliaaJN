@@ -4,7 +4,7 @@
     padding: 0 39px;
   }
   @media (min-width: $desktop) {
-    padding: 0 275px;
+    padding: 0 370px;
   }
 }
 .footer {
@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //   justify-content: space-between;
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
@@ -22,29 +21,23 @@
   }
   @media (min-width: $desktop) {
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @keyframes bounce{
-      0%{
-          transform: translateY(-50%);
-      }
+    justify-content: space-evenly;
   }
 
   &__btn {
     width: 45px;
     height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     transform: translateY(-50%);
     background-color: $white;
     border-radius: 22.5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    animation: flux 3s ease-out infinite;
     @media (min-width: $tablet) {
-      //   text-align: center;
-      left: 48%;
+      left: 48.5%;
     }
 
     &--link {
@@ -99,13 +92,20 @@
       }
     }
   }
-
+  .footer-links {
+    padding: 5px;
+    @media (min-width: $tablet) {
+      padding: 5px 15px 5px 0;
+    }
+  }
   &__smallContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 16px;
     @media (min-width: $tablet) {
       order: -1;
+      align-items: flex-start;
       padding-top: 45px;
       width: 210px;
     }
@@ -117,12 +117,12 @@
       padding-bottom: 45px;
       line-height: 30px;
     }
+
+    .heart-icono {
+      color: $bright-orange;
+      &:hover {
+        animation: shake 0.9s ease;
+      }
+    }
   }
-}
-.footer-links {
-  color: $colorLinks;
-  text-decoration: none;
-  font-size: $LinksSize;
-  text-transform: uppercase;
-  line-height: $lineHeight;
 }

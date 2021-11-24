@@ -1,8 +1,10 @@
 @import "core/variables";
 @import "core/reset";
+@import "core/links";
+@import "core/animations";
 @import "layout/header";
-@import "layout/footer";
 @import "layout/mainSection";
+@import "layout/footer";
 
 body {
   font-family: $MainFont;
