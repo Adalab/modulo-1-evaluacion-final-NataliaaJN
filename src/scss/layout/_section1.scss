@@ -1,72 +1,74 @@
+//  Section "Looking Through A Window
+
 .section1 {
-    padding: 30px 0;
-    background-color: $white;
+  padding: 30px 0;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+
+  &__article {
     display: flex;
-    justify-content: center;
-  
-    &__article {
+    flex-direction: column;
+    justify-content: flex-start;
+    &--insomnia {
+      font-size: 14px;
+      line-height: $lineHeight;
+      color: $light-blue;
+      margin-bottom: 1px;
+      @media (min-width: $tablet) {
+        width: 216px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $desktop) {
+        width: 360px;
+      }
+    }
+
+    &--title {
+      font-size: $MobilSectionSize;
+      @media (min-width: $tablet) {
+        font-size: $TabletSectionSize;
+      }
+      @media (min-width: $tablet) {
+        font-size: $DesktopSectionSize;
+      }
+    }
+
+    &--paragraph {
+      padding: 15px 0 30px 0;
+      color: #4a4a4a;
+      @media (min-width: $tablet) {
+        padding-top: 30px;
+      }
+    }
+
+    &--btn {
+      text-decoration: none;
+      padding: 0 25px 0 26px;
+      width: 76px;
+      height: 45px;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      &--insomnia {
-        font-size: 14px;
-        line-height: $lineHeight;
-        color: $light-blue;
-        margin-bottom: 1px;
-        @media (min-width: $tablet) {
-          width: 216px;
-          margin-bottom: 0;
-        }
-        @media (min-width: $desktop) {
-          width: 360px;
-        }
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      border: solid 2px $bright-orange;
+      border-radius: 22.5px;
+      font-size: 20px;
+      transition: transform 0.5s ease, color 1s ease-out,
+        background-color 2s ease-in, font-weight 0.5s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $white;
+        background-color: $bright-orange;
+        font-weight: bold;
       }
-  
-      &--title {
-        font-size: $MobilSectionSize;
-        @media (min-width: $tablet) {
-          font-size: $TabletSectionSize;
-        }
-        @media (min-width: $tablet) {
-          font-size: $DesktopSectionSize;
-        }
+      @media (min-width: $tablet) {
+        width: 91px;
       }
-  
-      &--paragraph {
-        padding: 15px 0 30px 0;
-        color: #4a4a4a;
-        @media (min-width: $tablet) {
-          padding-top: 30px;
-        }
-      }
-  
-      &--btn {
-        text-decoration: none;
-        padding: 0 25px 0 26px;
-        width: 76px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $white;
-        border: solid 2px $bright-orange;
-        border-radius: 22.5px;
-        font-size: 20px;
-        transition: transform 0.5s ease, color 1s ease-out,
-          background-color 2s ease-in, font-weight 0.5s ease;
-  
-        &:hover {
-          transform: scale(1.1);
-          color: $white;
-          background-color: $bright-orange;
-          font-weight: bold;
-        }
-        @media (min-width: $tablet) {
-          width: 91px;
-        }
-        @media (min-width: $desktop) {
-          width: 160px;
-        }
+      @media (min-width: $desktop) {
+        width: 160px;
       }
     }
   }
+}

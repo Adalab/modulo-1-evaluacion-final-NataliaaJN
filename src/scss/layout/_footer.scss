@@ -1,3 +1,5 @@
+// Footer
+
 .footer-wrapper {
   padding: 0 15px;
   @media (min-width: $tablet) {
@@ -24,6 +26,7 @@
     justify-content: space-evenly;
   }
 
+  // Button to go to the top
   &__btn {
     width: 45px;
     height: 45px;
@@ -51,6 +54,8 @@
       }
     }
   }
+
+  // Links to Adalab's website
 
   &__nav1 {
     padding-top: 60px;
@@ -98,6 +103,9 @@
       padding: 5px 15px 5px 0;
     }
   }
+
+  // Container for copyright and motto
+
   &__smallContainer {
     display: flex;
     flex-direction: column;
