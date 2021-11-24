@@ -1,3 +1,4 @@
+//Header section:
 .header {
   width: 100%;
   height: 100vh;
@@ -13,6 +14,7 @@
   justify-content: flex-end;
   color: $white;
 
+  // Fixed menu icon
   &__menu {
     width: 44px;
     height: 44px;
@@ -30,8 +32,6 @@
     &--link {
       padding: 15px 14px;
       display: flex;
-      // justify-content: center;
-      // align-items: center;
 
       .ico-menu {
         width: 16px;
@@ -40,6 +40,7 @@
     }
   }
 
+  //  Title
   &__title {
     text-align: center;
     word-spacing: 100vw;
@@ -71,6 +72,7 @@
     }
   }
 
+  // Button to go to '3 reasons to purchase'
   &__btn {
     background-color: $white;
     border-radius: 22.5px;

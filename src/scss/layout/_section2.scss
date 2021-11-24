@@ -1,0 +1,84 @@
+.section2 {
+    width: 100%;
+    padding: 30px 15px 60px 15px;
+    background-color: $colorSection2;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+  
+    @media (min-width: $tablet) {
+      row-gap: 0px;
+      padding: 30px 39px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 125px 100px 125px;
+      column-gap: 27.7px;
+    }
+    @media (min-width: $desktop) {
+      padding: 60px 275px;
+      column-gap: 26.2px;
+    }
+  
+    &__title {
+      grid-column: span 1;
+      font-size: $MobilSectionSize;
+      font-weight: bold;
+      @media (min-width: $tablet) {
+        grid-column: span 3;
+      }
+    }
+    &__reasons--reason1 {
+      grid-row: span 1;
+      text-align: center;
+    }
+    &__reasons--reason2 {
+      text-align: center;
+      grid-row: span 1;
+    }
+    &__reasons--reason3 {
+      text-align: center;
+      grid-row: span 1;
+    }
+    &__btn {
+      margin-top: 15px;
+      grid-row: span 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 184px;
+      height: 45px;
+      padding: 0 27.5px 0 28.5px;
+      background-color: $bright-orange;
+      color: $white;
+      border: solid 2px $bright-orange;
+      border-radius: 22.5px;
+      font-size: 20px;
+      line-height: 45px;
+      transition: transform 0.5s ease, color 1s ease-out,
+          background-color 2s ease-in, font-weight 0.5s ease;
+  
+      @media (min-width: $tablet) {
+        grid-column: span 3;
+        width: 210px;
+      }
+  
+      @media (min-width: $desktop) {
+        width: 255px;
+      }
+      &:hover {
+        transform: scale(1.1);
+        color: $bright-orange;
+        background-color: $white;
+        font-weight: bold;
+      }
+    }
+    .reason_flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+    }
+  }
