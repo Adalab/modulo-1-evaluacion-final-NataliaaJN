@@ -42,3 +42,6 @@ Los lenguajes y herramientas utilizadas en este proyecto son:
 ## Autor
 
 - [@NataliaaJN](https://github.com/NataliaaJN)
+
+## Nota
+Si te surge alguna duda sobre este proyecto o tienes alguna sugerencia para mejorar esta web, no dudes en contactarme en: atvnataliajn@gmail.com
