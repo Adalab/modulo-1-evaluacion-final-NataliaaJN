@@ -40,6 +40,11 @@
     text-align: center;
     @media (min-width: $tablet) {
       grid-column: span 3;
+      font-size: $TabletSectionSize;
+    }
+    @media (min-width: $desktop) {
+      grid-column: span 3;
+      font-size: $DesktopSectionSize;
     }
   }
 
@@ -101,7 +106,7 @@
     font-weight: 500;
     line-height: 45px;
     transition: transform 0.5s ease, color 1s ease-out,
-      background-color 2s ease-in, font-weight 0.5s ease;
+      background-color 0.5s ease-in, font-weight 0.5s ease;
 
     @media (min-width: $tablet) {
       margin-top: 20px;

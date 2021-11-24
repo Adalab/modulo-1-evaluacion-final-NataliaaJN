@@ -94,6 +94,16 @@
     margin-bottom: 53px;
     transform: translateY(-50%);
     animation: bounce 2.5s ease-in-out infinite;
+    transition: border 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
+    border: 0px solid $bright-orange;
+    text-shadow: 2px 2px 2px black;
+
+    &:hover {
+      border: 2px solid $bright-orange;
+      box-shadow: 0 0 12px $bright-orange, 0 0 12px $bright-orange,
+        0 0 22px $bright-orange;
+    }
 
     @media (min-width: $tablet) {
       margin-bottom: 45px;

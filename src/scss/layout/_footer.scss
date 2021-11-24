@@ -39,6 +39,12 @@
     border-radius: 22.5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     animation: flux 3s ease-out infinite;
+    transition: border 0.5s ease, box-shadow 0.5s ease;
+    &:hover {
+      border: 2px solid $bright-orange;
+      box-shadow: 0 0 12px $bright-orange, 0 0 12px $bright-orange,
+        0 0 22px $bright-orange;
+    }
     @media (min-width: $tablet) {
       left: 48.5%;
     }
