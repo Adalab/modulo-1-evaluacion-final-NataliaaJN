@@ -1,0 +1,32 @@
+.main {
+  &__anonymous {
+    width: 100%;
+    background-color: $bright-orange;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+      background-color: $colorAnonymous;
+      flex-direction: row;
+    }
+
+    &--title {
+      text-transform: capitalize;
+
+      @media (min-width: $tablet) {
+        padding-right: 10px;
+      }
+    }
+
+    .link-adalab {
+      text-decoration: none;
+      color: $white;
+      @media (min-width: $tablet) {
+        padding-left: 10px;
+      }
+    }
+  }
+}
